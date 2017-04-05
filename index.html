@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>UI Task File</title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body ng-app="myTask">
+<div class="topbar"><h1 id="name">Mateusz Grześkowiak</h1></div>
+<ul class="nav nav-list">
+	<li><a href="#">Strona główna</a></li>
+	<li><a href="http://matgrzes.prv.pl" target="_blank">Moje Portfolio</a></li>
+	<li><a href="http://cognifide.com" traget="_blank">Cognifide</a></li>
+	<li><a href="http://github.com/gregz09" target="_blank">Github</a></li>
+	<li><a href="#">Link</a></li>
+	<li><a href="#">Link</a></li>
+</ul>
+<div class="content" ng-controller="myController as myCtrl">
+	<h1 id="form">Formularz</h1>
+	<h2 id="wpisz">Wpisz zdanie</h2>
+    <input class="form-control" type="text" name="" placeholder="Wpisz dowolny tekst" />
+    <button class="btn btn-primary" id="odwroc" ng-click="myCtrl.click()">Odwróć</button><br/><br/><br/>
+	<textarea readonly id="wynik"> Wynik: {{ myCtrl.outcome }} </textarea>
+	<h1>Lista:</h1>
+	<ul id="list">
+		<li>Maria</li>
+		<li>Łukasz</li>
+		<li>Kamil</li>
+		<li>Anna</li>
+	</ul>
+	<button class="btn btn-primary" id="sort">Sortuj</button>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/reverse.js"></script>
+</html>
